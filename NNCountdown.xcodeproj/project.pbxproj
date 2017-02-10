@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		E30C0CEB1E4D559F007747AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E30C0CEA1E4D559F007747AC /* main.m */; };
 		E30C0CEE1E4D559F007747AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E30C0CED1E4D559F007747AC /* AppDelegate.m */; };
-		E30C0CF11E4D559F007747AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E30C0CF01E4D559F007747AC /* ViewController.m */; };
 		E30C0CF41E4D559F007747AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30C0CF21E4D559F007747AC /* Main.storyboard */; };
 		E30C0CF71E4D559F007747AC /* NNCountdown.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E30C0CF51E4D559F007747AC /* NNCountdown.xcdatamodeld */; };
 		E30C0CF91E4D559F007747AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30C0CF81E4D559F007747AC /* Assets.xcassets */; };
 		E30C0CFC1E4D559F007747AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E30C0CFA1E4D559F007747AC /* LaunchScreen.storyboard */; };
 		E30C0D071E4D559F007747AC /* NNCountdownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E30C0D061E4D559F007747AC /* NNCountdownTests.m */; };
+		E30C0D141E4D55DE007747AC /* UIButton+NNCountdown.m in Sources */ = {isa = PBXBuildFile; fileRef = E30C0D131E4D55DE007747AC /* UIButton+NNCountdown.m */; };
+		E30C0D171E4D5602007747AC /* NNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E30C0D161E4D5602007747AC /* NNViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,8 +33,6 @@
 		E30C0CEA1E4D559F007747AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E30C0CEC1E4D559F007747AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E30C0CED1E4D559F007747AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E30C0CEF1E4D559F007747AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E30C0CF01E4D559F007747AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E30C0CF31E4D559F007747AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E30C0CF61E4D559F007747AC /* NNCountdown.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NNCountdown.xcdatamodel; sourceTree = "<group>"; };
 		E30C0CF81E4D559F007747AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +41,10 @@
 		E30C0D021E4D559F007747AC /* NNCountdownTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NNCountdownTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30C0D061E4D559F007747AC /* NNCountdownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NNCountdownTests.m; sourceTree = "<group>"; };
 		E30C0D081E4D559F007747AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E30C0D121E4D55DE007747AC /* UIButton+NNCountdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NNCountdown.h"; sourceTree = "<group>"; };
+		E30C0D131E4D55DE007747AC /* UIButton+NNCountdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+NNCountdown.m"; sourceTree = "<group>"; };
+		E30C0D151E4D5602007747AC /* NNViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNViewController.h; sourceTree = "<group>"; };
+		E30C0D161E4D5602007747AC /* NNViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +86,11 @@
 		E30C0CE81E4D559F007747AC /* NNCountdown */ = {
 			isa = PBXGroup;
 			children = (
+				E30C0D111E4D55BD007747AC /* NNCountdown */,
 				E30C0CEC1E4D559F007747AC /* AppDelegate.h */,
 				E30C0CED1E4D559F007747AC /* AppDelegate.m */,
-				E30C0CEF1E4D559F007747AC /* ViewController.h */,
-				E30C0CF01E4D559F007747AC /* ViewController.m */,
+				E30C0D151E4D5602007747AC /* NNViewController.h */,
+				E30C0D161E4D5602007747AC /* NNViewController.m */,
 				E30C0CF21E4D559F007747AC /* Main.storyboard */,
 				E30C0CF81E4D559F007747AC /* Assets.xcassets */,
 				E30C0CFA1E4D559F007747AC /* LaunchScreen.storyboard */,
@@ -112,6 +116,15 @@
 				E30C0D081E4D559F007747AC /* Info.plist */,
 			);
 			path = NNCountdownTests;
+			sourceTree = "<group>";
+		};
+		E30C0D111E4D55BD007747AC /* NNCountdown */ = {
+			isa = PBXGroup;
+			children = (
+				E30C0D121E4D55DE007747AC /* UIButton+NNCountdown.h */,
+				E30C0D131E4D55DE007747AC /* UIButton+NNCountdown.m */,
+			);
+			path = NNCountdown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +171,7 @@
 		E30C0CDE1E4D559F007747AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NN;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "刘朋坤";
 				TargetAttributes = {
@@ -218,9 +232,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E30C0CF11E4D559F007747AC /* ViewController.m in Sources */,
 				E30C0CF71E4D559F007747AC /* NNCountdown.xcdatamodeld in Sources */,
 				E30C0CEE1E4D559F007747AC /* AppDelegate.m in Sources */,
+				E30C0D141E4D55DE007747AC /* UIButton+NNCountdown.m in Sources */,
+				E30C0D171E4D5602007747AC /* NNViewController.m in Sources */,
 				E30C0CEB1E4D559F007747AC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 72448A77WQ;
 				INFOPLIST_FILE = NNCountdown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KangXin.NNCountdown;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -371,6 +387,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 72448A77WQ;
 				INFOPLIST_FILE = NNCountdown/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = KangXin.NNCountdown;
 				PRODUCT_NAME = "$(TARGET_NAME)";

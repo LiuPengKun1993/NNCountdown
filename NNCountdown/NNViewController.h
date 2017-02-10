@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  NNViewController.h
 //  NNCountdown
 //
 //  Created by 刘朋坤 on 17/2/10.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface NNViewController : UIViewController
 
 @end
-
